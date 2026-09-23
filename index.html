@@ -6,10 +6,10 @@
 
     <meta
         name="description"
-        content="deleFOCO Producción — Producción audiovisual, servicios de producción y soluciones técnicas para empresas y marcas."
+        content="deleFOCO Talento — Oportunidades, comunidad y formación para profesionales técnicos del audiovisual."
     >
 
-    <title>deleFOCO — Producción para empresas</title>
+    <title>deleFOCO — Talento</title>
 
     <meta name="theme-color" content="#111111">
 
@@ -32,7 +32,7 @@
     </noscript>
 </head>
 
-<body class="business-mode dark-theme" data-page="business">
+<body class="professional-mode dark-theme" data-page="professional">
 
     <!-- =====================================================
          TRANSICIÓN DE AUDIENCIA
@@ -100,6 +100,10 @@
 
                 <a href="#casos" data-i18n="navCases">
                     Casos
+                </a>
+
+                <a href="#oportunidades" data-i18n="navOpportunities">
+                    Oportunidades
                 </a>
 
                 <a href="#referencias" data-i18n="navReferences">
@@ -254,18 +258,18 @@
 
                 <!-- SLIDE 1 -->
                 <article class="hero-slide active" data-slide="0">
-                    <div class="hero-background" style="--hero-img: url('https://delefoco.com/Uploads/Noticias/613_67458.jpg');"></div>
+                    <div class="hero-background" style="--hero-img: url('https://delefoco.com/Uploads/Noticias/611_67376.jpg');"></div>
                     <div class="container hero-content">
-                        <span class="eyebrow" data-i18n="heroEyebrowBusiness">deleFOCO / PRODUCCIÓN</span>
+                        <span class="eyebrow" data-i18n="heroEyebrowProfessional">DELEFOCO / TALENTO</span>
                         <h1 id="heroTitle">
-                            <span data-i18n="businessHeroTitle">Su producción, resuelta de principio a fin.</span>
+                            <span data-i18n="professionalHeroTitle">Aprendé a producir contenido audiovisual de la mano de la industria.</span>
                         </h1>
                         <p id="heroDescription">
-                            <span data-i18n="businessHeroText">Conectamos estrategia, producción, talento técnico y postproducción para convertir una idea en una pieza audiovisual lista para entregar.</span>
+                            <span data-i18n="professionalHeroText">Conectate con oportunidades, aprendé de profesionales y desarrollá experiencia dentro del ecosistema audiovisual.</span>
                         </p>
                         <div class="hero-actions">
-                            <a href="#cotizacion" class="btn btn-primary magnetic" data-action="business-quote" data-i18n="businessHeroButton">Solicitar cotización</a>
-                            <a href="#servicios" class="btn btn-secondary" data-i18n="businessHeroSecondary">Ver servicios</a>
+                            <a href="#participacion" class="btn btn-primary magnetic" data-action="professional-opportunities" data-i18n="professionalHeroButton">Quiero participar</a>
+                            <a href="#oportunidades" class="btn btn-secondary" data-i18n="professionalHeroSecondary">Conocer oportunidades</a>
                         </div>
                     </div>
                 </article>
@@ -1094,13 +1098,15 @@
         </section>
 
 
+
+
         <!-- =================================================
-             COTIZACIÓN
+             TALENTO / OPORTUNIDADES
         ================================================== -->
 
         <section
-            id="cotizacion"
-            class="quote-section"
+            id="oportunidades"
+            class="opportunities-section"
         >
 
             <div class="container">
@@ -1108,552 +1114,122 @@
                 <div class="section-heading reveal">
 
                     <span class="section-label">
-                        START A PROJECT
+                        TALENT / COMMUNITY
                     </span>
 
-                    <h2 data-i18n="quoteTitle">
-                        Contanos sobre tu producción
+                    <h2 data-i18n="opportunitiesTitle">
+                        Oportunidades para profesionales
                     </h2>
 
-                    <p data-i18n="quoteSubtitle">
-                        Completá el formulario y prepararemos
-                        una propuesta inicial.
+                    <p data-i18n="opportunitiesSubtitle">
+                        Conectamos talento técnico con proyectos,
+                        aprendizaje y nuevas experiencias.
                     </p>
 
                 </div>
 
 
-                <div class="quote-wrapper">
+                <!-- FILTROS -->
 
-                    <!-- PROGRESO -->
-
-                    <div class="quote-progress">
-
-                        <div
-                            class="quote-progress-step active"
-                            data-step="1"
-                        >
-                            <span>01</span>
-                            <small data-i18n="company">
-                                Empresa
-                            </small>
-                        </div>
-
-                        <div
-                            class="quote-progress-step"
-                            data-step="2"
-                        >
-                            <span>02</span>
-                            <small data-i18n="projectType">
-                                Tipo de proyecto
-                            </small>
-                        </div>
-
-                        <div
-                            class="quote-progress-step"
-                            data-step="3"
-                        >
-                            <span>03</span>
-                            <small data-i18n="scope">
-                                Alcance
-                            </small>
-                        </div>
-
-                        <div
-                            class="quote-progress-step"
-                            data-step="4"
-                        >
-                            <span>04</span>
-                            <small data-i18n="dates">
-                                Fechas
-                            </small>
-                        </div>
-
-                        <div
-                            class="quote-progress-step"
-                            data-step="5"
-                        >
-                            <span>05</span>
-                            <small data-i18n="brief">
-                                Brief
-                            </small>
-                        </div>
-
-                    </div>
-
-
-                    <!-- FORMULARIO -->
-
-                    <form
-                        id="quoteForm"
-                        class="quote-form"
-                        novalidate
-                    >
-
-                        <!-- PASO 1 -->
-
-                        <section
-                            class="quote-step active"
-                            data-step="1"
-                        >
-
-                            <div class="step-heading">
-
-                                <span>
-                                    01
-                                </span>
-
-                                <h3 data-i18n="company">
-                                    Empresa
-                                </h3>
-
-                            </div>
-
-
-                            <div class="form-grid">
-
-                                <div class="form-field full">
-
-                                    <label for="company" data-i18n="companyLabel">
-                                        Empresa / cliente
-                                    </label>
-
-                                    <input
-                                        id="company"
-                                        name="company"
-                                        type="text"
-                                        required
-                                        autocomplete="organization"
-                                        placeholder="Nombre de la empresa"
-                                        data-i18n-placeholder="companyPlaceholder"
-                                    >
-
-                                </div>
-
-                            </div>
-
-
-                            <div class="wizard-actions">
-
-                                <span></span>
-
-                                <button
-                                    type="button"
-                                    class="btn btn-primary"
-                                    data-next-step="2"
-                                    data-i18n="next"
-                                >
-                                    Continuar
-                                </button>
-
-                            </div>
-
-                        </section>
-
-
-                        <!-- PASO 2 -->
-
-                        <section
-                            class="quote-step"
-                            data-step="2"
-                        >
-
-                            <div class="step-heading">
-
-                                <span>
-                                    02
-                                </span>
-
-                                <h3 data-i18n="projectType">
-                                    Tipo de proyecto
-                                </h3>
-
-                            </div>
-
-
-                            <div class="form-grid">
-
-                                <div class="form-field full">
-
-                                    <label for="projectType" data-i18n="projectType">
-                                        Tipo de proyecto
-                                    </label>
-
-                                    <select
-                                        id="projectType"
-                                        name="projectType"
-                                        required
-                                    >
-                                        <option value="" data-i18n="selectOption">
-                                            Seleccioná una opción
-                                        </option>
-
-                                        <option value="Commercial" data-i18n="optCommercial">
-                                            Comercial
-                                        </option>
-
-                                        <option value="Corporate" data-i18n="optCorporate">
-                                            Corporativo
-                                        </option>
-
-                                        <option value="Documentary" data-i18n="optDocumentary">
-                                            Documental
-                                        </option>
-
-                                        <option value="Music Video" data-i18n="optMusicVideo">
-                                            Video musical
-                                        </option>
-
-                                        <option value="Social Media" data-i18n="optSocialMedia">
-                                            Redes sociales
-                                        </option>
-
-                                        <option value="Event" data-i18n="optEvent">
-                                            Evento
-                                        </option>
-
-                                        <option value="Photography" data-i18n="optPhotography">
-                                            Fotografía
-                                        </option>
-
-                                        <option value="Other" data-i18n="optOther">
-                                            Otro
-                                        </option>
-
-                                    </select>
-
-                                </div>
-
-                            </div>
-
-
-                            <div class="wizard-actions">
-
-                                <button
-                                    type="button"
-                                    class="btn btn-secondary"
-                                    data-back-step="1"
-                                    data-i18n="back"
-                                >
-                                    Atrás
-                                </button>
-
-                                <button
-                                    type="button"
-                                    class="btn btn-primary"
-                                    data-next-step="3"
-                                    data-i18n="next"
-                                >
-                                    Continuar
-                                </button>
-
-                            </div>
-
-                        </section>
-
-
-                        <!-- PASO 3 -->
-
-                        <section
-                            class="quote-step"
-                            data-step="3"
-                        >
-
-                            <div class="step-heading">
-
-                                <span>
-                                    03
-                                </span>
-
-                                <h3 data-i18n="scope">
-                                    Alcance
-                                </h3>
-
-                            </div>
-
-
-                            <div class="form-grid">
-
-                                <div class="form-field full">
-
-                                    <label for="scope" data-i18n="scopeLabel">
-                                        ¿Qué necesitás producir?
-                                    </label>
-
-                                    <textarea
-                                        id="scope"
-                                        name="scope"
-                                        rows="6"
-                                        required
-                                        placeholder="Contanos brevemente qué necesitás."
-                                        data-i18n-placeholder="scopePlaceholder"
-                                    ></textarea>
-
-                                </div>
-
-                            </div>
-
-
-                            <div class="wizard-actions">
-
-                                <button
-                                    type="button"
-                                    class="btn btn-secondary"
-                                    data-back-step="2"
-                                    data-i18n="back"
-                                >
-                                    Atrás
-                                </button>
-
-                                <button
-                                    type="button"
-                                    class="btn btn-primary"
-                                    data-next-step="4"
-                                    data-i18n="next"
-                                >
-                                    Continuar
-                                </button>
-
-                            </div>
-
-                        </section>
-
-
-                        <!-- PASO 4 -->
-
-                        <section
-                            class="quote-step"
-                            data-step="4"
-                        >
-
-                            <div class="step-heading">
-
-                                <span>
-                                    04
-                                </span>
-
-                                <h3 data-i18n="dates">
-                                    Fechas
-                                </h3>
-
-                            </div>
-
-
-                            <div class="form-grid two-columns">
-
-                                <div class="form-field">
-
-                                    <label for="dates" data-i18n="datesLabel">
-                                        Fecha estimada de producción
-                                    </label>
-
-                                    <input
-                                        id="dates"
-                                        name="dates"
-                                        type="date"
-                                        required
-                                    >
-
-                                </div>
-
-
-                                <div class="form-field">
-
-                                    <label for="budget">
-                                        <span data-i18n="budget">
-                                            Presupuesto
-                                        </span>
-                                    </label>
-
-                                    <select
-                                        id="budget"
-                                        name="budget"
-                                        required
-                                    >
-
-                                        <option value="" data-i18n="selectRange">
-                                            Seleccioná un rango
-                                        </option>
-
-                                        <option value="Under $1,000" data-i18n="budgetUnder">
-                                            Menos de $1,000
-                                        </option>
-
-                                        <option value="$1,000 - $3,000">
-                                            $1,000 - $3,000
-                                        </option>
-
-                                        <option value="$3,000 - $5,000">
-                                            $3,000 - $5,000
-                                        </option>
-
-                                        <option value="$5,000+">
-                                            $5,000+
-                                        </option>
-
-                                    </select>
-
-                                </div>
-
-                            </div>
-
-
-                            <div class="wizard-actions">
-
-                                <button
-                                    type="button"
-                                    class="btn btn-secondary"
-                                    data-back-step="3"
-                                    data-i18n="back"
-                                >
-                                    Atrás
-                                </button>
-
-                                <button
-                                    type="button"
-                                    class="btn btn-primary"
-                                    data-next-step="5"
-                                    data-i18n="next"
-                                >
-                                    Continuar
-                                </button>
-
-                            </div>
-
-                        </section>
-
-
-                        <!-- PASO 5 -->
-
-                        <section
-                            class="quote-step"
-                            data-step="5"
-                        >
-
-                            <div class="step-heading">
-
-                                <span>
-                                    05
-                                </span>
-
-                                <h3 data-i18n="brief">
-                                    Brief
-                                </h3>
-
-                            </div>
-
-
-                            <div class="form-grid">
-
-                                <div class="form-field full">
-
-                                    <label for="quoteBrief" data-i18n="quoteBriefLabel">
-                                        Brief del proyecto
-                                    </label>
-
-                                    <textarea
-                                        id="quoteBrief"
-                                        name="brief"
-                                        rows="8"
-                                        required
-                                        placeholder="Agregá toda la información que considerés importante."
-                                        data-i18n-placeholder="quoteBriefPlaceholder"
-                                    ></textarea>
-
-                                </div>
-
-
-                                <div class="form-field full">
-
-                                    <label for="briefFile" data-i18n="fileLabel">
-                                        Archivo de referencia
-                                    </label>
-
-                                    <input
-                                        id="briefFile"
-                                        name="briefFile"
-                                        type="file"
-                                        accept=".pdf,.doc,.docx,.txt,.jpg,.jpeg,.png"
-                                    >
-
-                                    <small id="fileName">
-                                        Opcional
-                                    </small>
-
-                                </div>
-
-                            </div>
-
-
-                            <p
-                                id="quoteError"
-                                class="form-message error-message"
-                                aria-live="polite"
-                            ></p>
-
-
-                            <div
-                                id="quoteSuccess"
-                                class="form-message success-message"
-                                aria-live="polite"
-                            >
-
-                                <strong data-i18n="successTitle">
-                                    ¡Solicitud recibida!
-                                </strong>
-
-                                <span data-i18n="successText">
-                                    Tu información está lista para ser enviada al equipo de producción.
-                                </span>
-
-                                <small class="form-message-note">
-                                    <span data-i18n="mailFallback">¿No se abrió tu correo? Escribinos a</span>
-                                    <a href="mailto:comunidad@delefoco.com">comunidad@delefoco.com</a>
-                                </small>
-
-                                <small
-                                    id="quoteMailNote"
-                                    class="form-message-note"
-                                    hidden
-                                ></small>
-
-                            </div>
-
-
-                            <div class="wizard-actions">
-
-                                <button
-                                    type="button"
-                                    class="btn btn-secondary"
-                                    data-back-step="4"
-                                    data-i18n="back"
-                                >
-                                    Atrás
-                                </button>
-
-                                <button
-                                    type="submit"
-                                    class="btn btn-primary"
-                                    data-i18n="submit"
-                                >
-                                    Solicitar cotización
-                                </button>
-
-                            </div>
-
-                        </section>
-
-                    </form>
-
+                <div class="opportunity-filters">
 
                     <button
-                        id="resetQuote"
-                        class="reset-quote"
                         type="button"
-                        data-i18n="resetQuote"
+                        class="active"
+                        data-opportunity-filter="all"
+                        data-i18n="filterAll"
                     >
-                        Reiniciar formulario
+                        Todos
                     </button>
+
+                    <button
+                        type="button"
+                        data-opportunity-filter="internship"
+                    >
+                        Internship
+                    </button>
+
+                    <button
+                        type="button"
+                        data-opportunity-filter="freelancer"
+                    >
+                        Freelancer
+                    </button>
+
+                    <button
+                        type="button"
+                        data-opportunity-filter="training"
+                        data-i18n="training"
+                    >
+                        Formación
+                    </button>
+
+                </div>
+
+
+                <div class="opportunities-grid">
+
+                    <article
+                        class="opportunity-card reveal"
+                        data-opportunity="internship"
+                    >
+
+                        <span class="opportunity-number">
+                            01
+                        </span>
+
+                        <h3 data-i18n="internship">
+                            Internship / Junior Crew
+                        </h3>
+
+                        <p data-i18n="internshipText">
+                            Construí experiencia participando
+                            en proyectos audiovisuales.
+                        </p>
+
+                    </article>
+
+
+                    <article
+                        class="opportunity-card reveal"
+                        data-opportunity="freelancer"
+                    >
+
+                        <span class="opportunity-number">
+                            02
+                        </span>
+
+                        <h3 data-i18n="freelancer">
+                            Comunidad de profesionales
+                        </h3>
+
+                        <p data-i18n="freelancerText">
+                            Formá parte de una red de perfiles
+                            técnicos y creativos.
+                        </p>
+
+                    </article>
+
+
+                    <article
+                        class="opportunity-card reveal"
+                        data-opportunity="training"
+                    >
+
+                        <span class="opportunity-number">
+                            03
+                        </span>
+
+                        <h3 data-i18n="training">
+                            Formación
+                        </h3>
+
+                        <p data-i18n="trainingText">
+                            Aprendé con recursos y experiencias
+                            conectadas con la industria.
+                        </p>
+
+                    </article>
 
                 </div>
 
@@ -1663,82 +1239,313 @@
 
 
         <!-- =================================================
-             CUESTIONARIO POR WHATSAPP
+             CREW
         ================================================== -->
 
-        <section id="cuestionario" class="quote-section whatsapp-section">
+        <section class="crew-section">
 
             <div class="container">
 
                 <div class="section-heading reveal">
-                    <span class="section-label">QUICK QUESTIONNAIRE</span>
-                    <h2>Cuestionario rápido</h2>
-                    <p>Respondé estas preguntas y enviá la información directo por WhatsApp.</p>
+
+                    <span class="section-label">
+                        CREW DIRECTORY
+                    </span>
+
+                    <h2 data-i18n="crewTitle">
+                        Explorá perfiles técnicos
+                    </h2>
+
+                    <p data-i18n="crewSubtitle">
+                        Descubrí las diferentes áreas que forman
+                        parte de una producción audiovisual.
+                    </p>
+
                 </div>
 
-                <div class="quote-wrapper">
 
-                    <form id="whatsappForm" class="quote-form" onsubmit="return false;" novalidate>
+                <div class="crew-selector">
+
+                    <button
+                        type="button"
+                        data-crew="camera"
+                    >
+                        Camera
+                    </button>
+
+                    <button
+                        type="button"
+                        data-crew="sound"
+                    >
+                        Sound
+                    </button>
+
+                    <button
+                        type="button"
+                        data-crew="direction"
+                    >
+                        Direction
+                    </button>
+
+                    <button
+                        type="button"
+                        data-crew="art"
+                    >
+                        Art
+                    </button>
+
+                    <button
+                        type="button"
+                        data-crew="lighting"
+                    >
+                        Lighting
+                    </button>
+
+                    <button
+                        type="button"
+                        data-crew="editing"
+                    >
+                        Editing
+                    </button>
+
+                    <button
+                        type="button"
+                        data-crew="production"
+                    >
+                        Production
+                    </button>
+
+                    <button
+                        type="button"
+                        data-crew="other"
+                    >
+                        Other
+                    </button>
+
+                </div>
+
+
+                <div
+                    id="crewOutput"
+                    class="crew-output"
+                ></div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =================================================
+             FORMULARIO TALENTO
+        ================================================== -->
+
+        <section
+            id="participacion"
+            class="talent-form-section"
+        >
+
+            <div class="container">
+
+                <div class="talent-form-layout">
+
+                    <div class="talent-form-intro">
+
+                        <span class="section-label">
+                            JOIN DELEFOCO
+                        </span>
+
+                        <h2 data-i18n="talentFormTitle">
+                            Quiero formar parte
+                        </h2>
+
+                        <p data-i18n="talentIntro">
+                            Compartí tu información y contanos
+                            en qué área te gustaría participar.
+                        </p>
+
+                    </div>
+
+
+                    <form
+                        id="talentForm"
+                        class="talent-form"
+                        novalidate
+                    >
 
                         <div class="form-grid">
 
-                            <div class="form-field">
-                                <label for="nombre">Nombre</label>
-                                <input id="nombre" name="nombre" type="text" autocomplete="name" placeholder="Juan Pérez">
+                            <div class="form-field full">
+
+                                <label for="talentName">
+                                    <span data-i18n="talentName">
+                                        Nombre completo
+                                    </span>
+                                </label>
+
+                                <input
+                                    id="talentName"
+                                    name="name"
+                                    type="text"
+                                    required
+                                    autocomplete="name"
+                                >
+
                             </div>
 
-                            <div class="form-field">
-                                <label for="correo">Correo</label>
-                                <input id="correo" name="correo" type="email" autocomplete="email" placeholder="juan@email.com">
-                            </div>
 
                             <div class="form-field">
-                                <label for="cliente">Tipo de cliente</label>
-                                <select id="cliente" name="cliente">
-                                    <option value="">Seleccioná una opción</option>
-                                    <option value="Particular">Particular</option>
-                                    <option value="Empresa">Empresa</option>
+
+                                <label for="talentEmail">
+                                    <span data-i18n="talentEmail">
+                                        Correo electrónico
+                                    </span>
+                                </label>
+
+                                <input
+                                    id="talentEmail"
+                                    name="email"
+                                    type="email"
+                                    required
+                                    autocomplete="email"
+                                >
+
+                            </div>
+
+
+                            <div class="form-field">
+
+                                <label for="talentRole">
+                                    <span data-i18n="talentRole">
+                                        Área de interés
+                                    </span>
+                                </label>
+
+                                <select
+                                    id="talentRole"
+                                    name="role"
+                                    required
+                                >
+
+                                    <option value="" data-i18n="selectArea">
+                                        Seleccioná un área
+                                    </option>
+
+                                    <option value="Camera">
+                                        Camera
+                                    </option>
+
+                                    <option value="Sound">
+                                        Sound
+                                    </option>
+
+                                    <option value="Direction">
+                                        Direction
+                                    </option>
+
+                                    <option value="Art">
+                                        Art
+                                    </option>
+
+                                    <option value="Lighting">
+                                        Lighting
+                                    </option>
+
+                                    <option value="Editing">
+                                        Editing
+                                    </option>
+
+                                    <option value="Production">
+                                        Production
+                                    </option>
+
+                                    <option value="Other">
+                                        Other
+                                    </option>
+
                                 </select>
+
                             </div>
 
-                            <div class="form-field">
-                                <label for="produccion">Tipo de producción</label>
-                                <select id="produccion" name="produccion">
-                                    <option value="">Seleccioná una opción</option>
-                                    <option value="Comercial">Comercial</option>
-                                    <option value="Corporativo">Corporativo</option>
-                                    <option value="Documental">Documental</option>
-                                    <option value="Video musical">Video musical</option>
-                                    <option value="Redes sociales">Redes sociales</option>
-                                    <option value="Evento">Evento</option>
-                                    <option value="Fotografía">Fotografía</option>
-                                    <option value="Otro">Otro</option>
-                                </select>
-                            </div>
-
-                            <div class="form-field">
-                                <label for="locacion">Locación</label>
-                                <input id="locacion" name="locacion" type="text" placeholder="San José">
-                            </div>
-
-                            <div class="form-field">
-                                <label for="fecha">Fecha</label>
-                                <input id="fecha" name="fecha" type="date">
-                            </div>
 
                             <div class="form-field full">
-                                <label for="presupuesto">Presupuesto</label>
-                                <input id="presupuesto" name="presupuesto" type="text" placeholder="₡500.000">
+
+                                <label for="talentExperience">
+                                    <span data-i18n="talentExperience">
+                                        Experiencia
+                                    </span>
+                                </label>
+
+                                <textarea
+                                    id="talentExperience"
+                                    name="experience"
+                                    rows="5"
+                                    required
+                                ></textarea>
+
+                            </div>
+
+
+                            <div class="form-field full">
+
+                                <label for="talentMessage">
+                                    <span data-i18n="talentMessage">
+                                        Contanos un poco sobre vos
+                                    </span>
+                                </label>
+
+                                <textarea
+                                    id="talentMessage"
+                                    name="message"
+                                    rows="5"
+                                ></textarea>
+
                             </div>
 
                         </div>
 
-                        <p id="whatsappError" class="form-message error-message" aria-live="polite"></p>
 
-                        <div class="wizard-actions">
-                            <span></span>
-                            <button type="button" class="btn btn-primary" onclick="enviarWhatsApp()"> Enviar por WhatsApp </button>
+                        <p
+                            id="talentError"
+                            class="form-message error-message"
+                            aria-live="polite"
+                        ></p>
+
+
+                        <div
+                            id="talentSuccess"
+                            class="form-message success-message"
+                            aria-live="polite"
+                        >
+
+                            <strong data-i18n="talentSuccessTitle">
+                                ¡Perfil listo para enviar!
+                            </strong>
+
+                            <span data-i18n="talentSuccessText">
+                                Se abrirá tu aplicación de correo para completar el envío.
+                            </span>
+
+                            <small class="form-message-note">
+                                <span data-i18n="mailFallback">¿No se abrió tu correo? Escribinos a</span>
+                                <a href="mailto:comunidad@delefoco.com">comunidad@delefoco.com</a>
+                            </small>
+
+                            <small
+                                id="talentMailNote"
+                                class="form-message-note"
+                                hidden
+                            ></small>
+
                         </div>
+
+
+                        <button
+                            type="submit"
+                            class="btn btn-primary magnetic"
+                            data-i18n="sendProfile"
+                        >
+                            Enviar perfil
+                        </button>
 
                     </form>
 
@@ -1884,13 +1691,13 @@
                             DELEFOCO
                         </span>
 
-                        <h2 data-i18n="contactTitle">
-                            Hagamos que la producción suceda.
+                        <h2 data-i18n="talentContactTitle">
+                            Sumate al equipo de talento deleFOCO.
                         </h2>
 
-                        <p data-i18n="contactText">
-                            Contanos qué necesitás y encontremos
-                            la mejor forma de llevarlo a producción.
+                        <p data-i18n="talentContactText">
+                            Contanos quién sos y encontremos
+                            la mejor oportunidad para vos.
                         </p>
 
                     </div>
@@ -1899,12 +1706,12 @@
                     <div class="contact-actions">
 
                         <a
-                            href="#cotizacion"
+                            href="#participacion"
                             class="btn btn-primary"
-                            data-action="business-quote"
-                            data-i18n="businessHeroButton"
+                            data-action="professional-opportunities"
+                            data-i18n="professionalHeroButton"
                         >
-                            Solicitar cotización
+                            Quiero participar
                         </a>
 
                         <a
@@ -1972,6 +1779,10 @@
 
             <div class="footer-links">
 
+                <a href="#oportunidades" data-i18n="navOpportunities">
+                    Oportunidades
+                </a>
+
                 <a href="#referencias" data-i18n="navReferences">
                     Referencias
                 </a>
@@ -1980,8 +1791,12 @@
                     Contacto
                 </a>
 
-                <a href="https://talento-rose-nine.vercel.app/" data-i18n="footerTalentLink">
-                    ¿Sos talento? Sumate acá
+                <a href="https://delefoco.com/registrarme/" data-i18n="register">
+                    Registrarme
+                </a>
+
+                <a href="https://empresaaa.vercel.app/" data-i18n="footerBusinessLink">
+                    ¿Sos empresa? Conocé nuestros servicios
                 </a>
 
             </div>
