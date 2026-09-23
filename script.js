@@ -809,11 +809,11 @@ const ACTION_AUDIENCE = {
 };
 
 const AUDIENCE_PAGES = {
-    business: "empresa.html",
-    professional: "index.html"
+    business: "https://empresaaa.vercel.app/",
+    professional: "https://talento-rose-nine.vercel.app/"
 };
 
-const AUDIENCE_TRANSITION_FLAG = "delefocoAudienceTransition";
+const AUDIENCE_TRANSITION_PARAM = "audienceTransition";
 
 function updateAudienceLabels() {
     audienceButtons.forEach(button => {
@@ -867,10 +867,16 @@ function goToAudiencePage(audience) {
     const target = AUDIENCE_PAGES[audience];
     if (!target) return;
 
-    /* Le avisamos a la página de destino que debe entrar ya con el
-       overlay activo, para que el corte se vea continuo. */
-    safeStorage.set(AUDIENCE_TRANSITION_FLAG, audience);
-    window.location.href = target;
+    /* Le avisamos a la página de destino (puede ser otro dominio)
+       que debe entrar ya con el overlay activo, vía parámetro en la URL,
+       para que el corte se vea continuo. */
+    try {
+        const url = new URL(target, window.location.href);
+        url.searchParams.set(AUDIENCE_TRANSITION_PARAM, audience);
+        window.location.href = url.href;
+    } catch (error) {
+        window.location.href = target;
+    }
 }
 
 function requestAudienceChange(audience, onDone) {
@@ -910,10 +916,24 @@ function requestAudienceChange(audience, onDone) {
 }
 
 function playIncomingAudienceTransition() {
-    const incoming = safeStorage.get(AUDIENCE_TRANSITION_FLAG);
+    let incoming = null;
+    try {
+        incoming = new URLSearchParams(window.location.search).get(AUDIENCE_TRANSITION_PARAM);
+    } catch (error) {
+        incoming = null;
+    }
+
     if (!incoming) return;
 
-    safeStorage.set(AUDIENCE_TRANSITION_FLAG, "");
+    /* Limpiamos el parámetro de la URL para que no quede pegado
+       si la persona comparte o recarga el link. */
+    try {
+        const url = new URL(window.location.href);
+        url.searchParams.delete(AUDIENCE_TRANSITION_PARAM);
+        window.history.replaceState(null, "", url.pathname + url.search + url.hash);
+    } catch (error) {
+        // entornos con history restringido
+    }
 
     if (!audienceTransition || prefersReducedMotion()) return;
 
